@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/output"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginRight="5dp"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.30" />
+
+
+    <TextView
+        android:id="@+id/input"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginRight="5dp"
+        android:gravity="center_vertical"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toTopOf="@+id/output"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.096" />
+
+    <androidx.constraintlayout.helper.widget.Flow
+        android:id="@+id/flow_0"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:constraint_referenced_ids="flow_1,flow_2, flow_3, flow_4"
+        app:flow_horizontalGap="1dp"
+        app:flow_horizontalStyle="packed"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/output" />
+
+
+    <androidx.constraintlayout.helper.widget.Flow
+        android:id="@+id/flow_1"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:textColor="@color/white"
+        app:constraint_referenced_ids="C,b7,b4,b1,button"
+        app:flow_horizontalGap="1dp"
+        app:flow_verticalGap="1dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="@id/flow_0"
+        app:layout_constraintTop_toBottomOf="@+id/output"
+        app:layout_constraintVertical_bias="@integer/material_motion_duration_medium_1"
+
+        />
+
+    <Button
+        android:id="@+id/C"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:backgroundTint="#65c2ff"
+        android:gravity="center"
+        android:text="C"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toTopOf="@+id/flow_0"
+        app:layout_constraintTop_toBottomOf="@+id/flow_1" />
+
+    <Button
+        android:id="@+id/b7"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:backgroundTint="@color/white"
+        android:gravity="center"
+        android:text="7"
+        android:textColor="@color/black"
+        android:textSize="25sp" />
+
+    <Button
+        android:id="@+id/b4"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:backgroundTint="@color/white"
+        android:gravity="center"
+        android:text="4"
+        android:textColor="@color/black"
+        android:textSize="25sp" />
+
+    <Button
+        android:id="@+id/b1"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:backgroundTint="@color/white"
+        android:gravity="center"
+        android:text="1"
+        android:textColor="@color/black"
+        android:textSize="25sp" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:backgroundTint="@color/white"
+        android:gravity="center"
+        android:text="."
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        tools:ignore="MissingConstraints" />
+
+
+    <androidx.constraintlayout.helper.widget.Flow
+        android:id="@+id/flow_2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:constraint_referenced_ids="CE,b8,b5,b2,b0"
+        app:flow_verticalGap="1dp"
+        app:layout_constraintEnd_toEndOf="@id/flow_1"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintStart_toStartOf="@id/flow_1" />
+
+
+    <Button
+        android:id="@+id/CE"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:backgroundTint="#65c2ff"
+        android:text="CE"
+        app:tint="@color/white" />
+
+
+    <Button
+        android:id="@+id/b8"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:backgroundTint="@color/white"
+        android:gravity="center"
+        android:text="8"
+        android:textColor="@color/black"
+        android:textSize="25sp" />
+
+    <Button
+        android:id="@+id/b5"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:backgroundTint="@color/white"
+        android:gravity="center"
+        android:text="5"
+        android:textColor="@color/black"
+        android:textSize="25sp" />
+
+    <Button
+        android:id="@+id/b2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:backgroundTint="@color/white"
+        android:gravity="center"
+        android:text="2"
+        android:textColor="@color/black"
+        android:textSize="25sp" />
+
+    <Button
+        android:id="@+id/b0"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:backgroundTint="@color/white"
+        android:gravity="center"
+        android:text="0"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        tools:ignore="MissingConstraints" />
+
+    <androidx.constraintlayout.helper.widget.Flow
+        android:id="@+id/flow_3"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:constraint_referenced_ids="module,b9,b6,b3,equal"
+        app:flow_verticalGap="1dp"
+        app:layout_constraintEnd_toEndOf="@id/flow_2"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintStart_toStartOf="@id/flow_2"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/module"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:backgroundTint="#65c2ff"
+        android:gravity="center"
+        android:text="%"
+        android:textColor="@color/white"
+        android:textSize="25sp" />
+
+    <Button
+        android:id="@+id/b9"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:backgroundTint="@color/white"
+        android:gravity="center"
+        android:text="9"
+        android:textColor="@color/black"
+        android:textSize="25sp" />
+
+    <Button
+        android:id="@+id/b6"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:backgroundTint="@color/white"
+        android:gravity="center"
+        android:text="6"
+        android:textColor="@color/black"
+        android:textSize="25sp" />
+
+    <Button
+        android:id="@+id/b3"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:backgroundTint="@color/white"
+        android:gravity="center"
+        android:text="3"
+        android:textColor="@color/black"
+        android:textSize="25sp" />
+
+    <Button
+        android:id="@+id/equal"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:backgroundTint="@color/white"
+        android:gravity="center"
+        android:text="="
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        tools:ignore="MissingConstraints" />
+
+    <androidx.constraintlayout.helper.widget.Flow
+        android:id="@+id/flow_4"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:constraint_referenced_ids="division,mul,sub,sum"
+        app:flow_verticalGap="1dp"
+        app:layout_constraintBottom_toTopOf="@+id/flow_0"
+        app:layout_constraintEnd_toEndOf="@id/flow_3"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/output"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/division"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:backgroundTint="#169aff"
+        android:gravity="center"
+        android:text="\"
+        android:textColor="@color/white"
+        android:textSize="28sp"
+        app:layout_constraintLeft_toLeftOf="@id/division"
+        app:layout_constraintRight_toLeftOf="@+id/sum"
+        app:layout_constraintTop_toTopOf="@+id/flow_4"
+        app:layout_constraintVertical_weight="1" />
+
+    <Button
+        android:id="@+id/mul"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:backgroundTint="#169aff"
+        android:gravity="center"
+        android:text="*"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        app:layout_constraintVertical_weight="1" />
+
+    <Button
+        android:id="@+id/sub"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:backgroundTint="#169aff"
+        android:gravity="center"
+        android:text="-"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        app:layout_constraintVertical_weight="1" />
+
+    <Button
+        android:id="@+id/sum"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:backgroundTint="#169aff"
+        android:gravity="center"
+        android:text="+"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        app:layout_constraintVertical_weight="2" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
